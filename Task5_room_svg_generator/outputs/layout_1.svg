@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="650" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="400" height="250" fill="#e0f7ff" stroke="black" stroke-width="2"/>
+<text x="10" y="20" font-size="14" fill="black">Living Room</text>
+<rect x="400" y="0" width="200" height="150" fill="#e0f7ff" stroke="black" stroke-width="2"/>
+<text x="410" y="20" font-size="14" fill="black">Bathroom</text>
+<rect x="600" y="0" width="300" height="200" fill="#e0f7ff" stroke="black" stroke-width="2"/>
+<text x="610" y="20" font-size="14" fill="black">Bedroom 2</text>
+<rect x="0" y="250" width="250" height="180" fill="#e0f7ff" stroke="black" stroke-width="2"/>
+<text x="10" y="270" font-size="14" fill="black">Study Room</text>
+<rect x="250" y="250" width="150" height="150" fill="#e0f7ff" stroke="black" stroke-width="2"/>
+<text x="260" y="270" font-size="14" fill="black">Toilet</text>
+<rect x="400" y="250" width="280" height="200" fill="#e0f7ff" stroke="black" stroke-width="2"/>
+<text x="410" y="270" font-size="14" fill="black">Guest Room</text>
+<rect x="680" y="250" width="300" height="200" fill="#e0f7ff" stroke="black" stroke-width="2"/>
+<text x="690" y="270" font-size="14" fill="black">Bedroom 1</text>
+<rect x="0" y="450" width="300" height="200" fill="#e0f7ff" stroke="black" stroke-width="2"/>
+<text x="10" y="470" font-size="14" fill="black">Dining Room</text>
+<rect x="300" y="450" width="250" height="200" fill="#e0f7ff" stroke="black" stroke-width="2"/>
+<text x="310" y="470" font-size="14" fill="black">Kitchen</text>
+</svg>
