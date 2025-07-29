@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Reminder Scheduler</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 30px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin-bottom: 40px;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Schedule a Reminder</h2>
+  <form method="post">
+    <input name="email" placeholder="Designer Email" required>
+    <input name="subject" placeholder="Reminder Subject (e.g., Team Meeting)" required>
+    <input type="date" name="date" required>
+    <input type="time" name="time" required>
+    <select name="type" required>
+      <option value="Meeting">Meeting</option>
+      <option value="Task">Task</option>
+      <option value="Deadline">Deadline</option>
+      <option value="Other">Other</option>
+    </select>
+    <button type="submit">Schedule Reminder</button>
+  </form>
+
+  <h2>Scheduled Reminders</h2>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Email</th>
+      <th>Subject</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Type</th>
+    </tr>
+    {% for r in reminders %}
+    <tr>
+      <td>{{ r[0] }}</td>
+      <td>{{ r[1] }}</td>
+      <td>{{ r[2] }}</td>
+      <td>{{ r[4] }}</td>
+      <td>{{ r[5] }}</td>
+      <td>{{ r[6] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+
+</body>
+</html>
